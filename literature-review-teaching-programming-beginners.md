@@ -164,9 +164,16 @@ not even *read and trace* code reliably, suggesting the writing failure had a
 more basic cause. Subsequent BRACElet studies established correlational
 evidence for a skill hierarchy: tracing and explaining code predict and
 plausibly precede the ability to write it (Lopez et al., 2008; Whalley et
-al., 2006). Students who can summarise what a code fragment does in one
-sentence — "explain in plain English" — tend to be the ones who can write
-code (Murphy et al., 2012).
+al., 2006), a relationship replicated across institutions and languages
+(Lister et al., 2009). Students who can summarise what a code fragment does
+in one sentence — "explain in plain English" — tend to be the ones who can
+write code (Murphy et al., 2012). The hierarchy should not be over-read,
+though: a much larger replication (600+ students) found that several
+similar skill structures fit the data equally well, and that correlations
+measured at one point in time cannot by themselves establish the best
+*teaching order* (Fowler et al., 2022). The robust core is that
+comprehension skills and writing skill travel together, and that
+comprehension is teachable and assessable in its own right.
 
 This reading-before-writing finding is arguably the single most
 practice-relevant result in the CER canon. It directly motivates several of
@@ -183,7 +190,11 @@ BlueJ Java environment, showed that the most frequent novice errors are not
 the ones educators believe are most frequent, and that educators' rankings of
 error frequency barely agree with each other (Altadmri & Brown, 2015; Brown &
 Altadmri, 2017). Some syntax errors that educators consider trivial consume
-enormous amounts of novice time. Error messages themselves are a documented
+enormous amounts of novice time. Qian and Lehman's (2017) review organises
+novice difficulties into syntactic, conceptual, and strategic layers, and
+traces their sources: transfer from natural language and mathematics,
+fragile notional machines, and missing problem-solving strategies. Error
+messages themselves are a documented
 barrier: a fifty-year research landscape review concluded that compiler error
 messages remain consistently unhelpful for novices and proposed design
 guidelines (Becker et al., 2019).
@@ -496,16 +507,50 @@ data) rather than through abstract puzzles.
 
 ### 4.8 Program visualisation and tracing support
 
-Tools that visualise program state — Python Tutor being the most used —
-target notional-machine construction directly. Reviews conclude that
-visualisation helps *when students actively engage* (predicting, annotating)
-rather than passively watching animations (Sorva et al., 2013). Requiring
+Tools that visualise program state — Python Tutor being the most used
+(Guo, 2013) — target notional-machine construction directly. Reviews
+conclude that visualisation helps *when students actively engage*
+(predicting, annotating) rather than passively watching animations (Sorva
+et al., 2013). Requiring
 hand-tracing with a consistent paper protocol (memory tables) is a low-tech
 equivalent with observational support: tracing skill correlates with writing
 skill (Lister et al., 2004; Lopez et al., 2008), and explicit tracing
 instruction is a standard recommendation (Xie et al., 2019; Hermans, 2021).
 
-### 4.9 What does *not* have good evidence
+### 4.9 Problem-solving process, metacognition, and debugging
+
+Two expert skills are so routinely assumed that intro courses forget to
+teach them: managing one's own problem-solving process, and debugging.
+
+**Metacognitive scaffolding.** Novices are frequently unaware of *where they
+are* in the problem-solving process. Prather et al. (2018) documented the
+characteristic failures this produces around automated assessment: skipping
+problem interpretation, rushing to code, and refusing to re-examine a
+seemingly finished solution. Teaching an explicit stage model (interpret
+the problem, search for analogous problems, plan, implement, evaluate) and
+prompting students to name their current stage measurably increased
+novices' awareness of their own process and their problem-solving
+performance (Loksa et al., 2016). A systematic review consolidates the
+theoretical base and the consistent finding that explicit process
+instruction benefits novices (Loksa et al., 2022). The theme has acquired
+new urgency in the LLM era: the documented failure mode of struggling
+students working with AI assistants is precisely metacognitive (§9.2).
+
+**Debugging.** Although novices spend much of their time debugging, it is
+rarely taught as content. The literature has long documented that novices
+debug qualitatively differently from experts — single fixed hypothesis,
+haphazard edits — and recommends explicit instruction in hypothesis-driven
+debugging (McCauley et al., 2008). The intervention evidence supports
+this: teaching a systematic debugging process improved both debugging
+performance and self-efficacy in a controlled classroom study (Michaeli &
+Romeike, 2019), and a recent systematic review of 43 debugging
+interventions maps the design space while noting that most interventions
+target only fragments of the debugging process and rarely address its
+affective side (Yang et al., 2024). Live coding (4.6) contributes
+modelling of debugging behaviour, but modelling alone is not a debugging
+curriculum.
+
+### 4.10 What does *not* have good evidence
 
 For balance, several widespread practices lack support:
 
@@ -661,9 +706,13 @@ include mastery-based exam retakes, gateway tests of basic fluency (e.g.,
 must pass a basic code-writing check to proceed), and frequent low-stakes
 testing whose primary function is information, not grading. The
 test-enhanced-learning literature supports frequent retrieval practice in
-general (Dunlosky et al., 2013), and CS-specific implementations of
-mastery learning report reduced failure tails, though the controlled evidence
-base is thinner here than for the practices in section 4.
+general (Dunlosky et al., 2013), and CS-specific implementations of mastery
+learning report substantial gains, concentrated among weaker students
+(McCane et al., 2017). The documented failure mode is procrastination: when
+deadlines disappear, task completion drops and periods of inactivity
+lengthen, so mastery structures need pacing scaffolds attached (Ott et al.,
+2021). The controlled evidence base remains thinner here than for the
+practices in section 4.
 
 ---
 
@@ -697,10 +746,13 @@ by disengaging; those who hold a growth mindset interpret struggle as normal
 (Dweck, 2006). CS-specific findings: mindsets about programming
 are domain-specific and correlate with practice behaviour (Scott & Ghinea,
 2014), and an early intervention study reported benefits of mindset training
-in CS1 (Cutts et al., 2010). However, large general-education RCTs and
-meta-analyses show small and conditional effects of standalone mindset
-interventions. The current reading for practice: do not buy a mindset
-*programme*; instead remove the classroom signals that teach fixedness —
+in CS1 (Cutts et al., 2010). However, meta-analyses of general-education
+mindset interventions find very small average effects (Sisk et al., 2018),
+and a large pre-registered national experiment found meaningful benefits
+only for lower-achieving students and only where peer norms supported the
+message (Yeager et al., 2019). The current reading for practice: do not buy
+a mindset *programme*; instead remove the classroom signals that teach
+fixedness —
 geek-gene talk, curve grading, public early rankings — and normalise struggle
 explicitly (Patitsas et al., 2020; section 2.6). Messaging matters most when
 it comes from how the course actually behaves (retakes exist; early failure
@@ -765,7 +817,11 @@ constraints (work, family, finances) shape persistence at least as much as
 course difficulty; and real-world applicability is a stronger motivational
 lever than abstract intellectual challenge (Lyon & Denner, 2016). None of
 this implies lower ceilings; transfer students who complete bachelor
-programmes perform comparably to direct entrants.
+programmes perform comparably to direct entrants. Qualitative follow-up
+work documents how institutional obstacles on the transfer pathway —
+credit loss, advising gaps, course misalignment — function as setbacks
+unrelated to ability but easily read as personal failure (Lyon & Denner,
+2019).
 
 ### 8.2 Design frameworks that fit the vocational profile
 
@@ -776,7 +832,12 @@ practice-oriented programmes and are well grounded theoretically:
   scaffolding, articulation, reflection, exploration — with the explicit goal
   of teaching the *processes* experts use. Live coding, code review, think-
   aloud debugging demonstrations, and studio formats are its classroom
-  instantiations (sections 3.3, 4.6). Situated learning theory adds that
+  instantiations (sections 3.3, 4.6). The most direct CS1 evidence for this
+  tradition is the *extreme apprenticeship* model — minimal lecturing,
+  extensive scaffolded lab work, continuous instructor feedback — which
+  markedly improved outcomes at Helsinki (Vihavainen et al., 2011) and fed
+  several of the course transformations later reviewed in Vihavainen et al.
+  (2014). Situated learning theory adds that
   identity formation — coming to see oneself as a developer — happens
   through
   legitimate peripheral participation in authentic practice (Lave & Wenger,
@@ -805,9 +866,12 @@ McCracken problem and overloads weaker students) or only the second
 
 Vocational programmes' distinctive asset is structured workplace learning.
 The general evidence on internships and work-integrated learning shows
-benefits for employability and motivation; the CER-specific literature is
-sparse but consistent with it. Two evidence-aligned recommendations: first,
-prepare students for workplace code *before* the placement — code reading at
+benefits for employability and motivation, with the caveat that placement
+*design* — preparation, mentoring, structured debriefing — rather than mere
+exposure drives skill development (Jackson, 2015); the CER-specific
+literature is sparse but consistent with it. Two evidence-aligned
+recommendations: first, prepare students for workplace code *before* the
+placement — code reading at
 scale, version control collaboration, asking-for-help protocols — because
 placements presume exactly the skills (reading unfamiliar code, tooling
 fluency) that intro courses underemphasise (sections 2.3, 5.3). Second,
@@ -862,7 +926,8 @@ misaligned with industry practice (Lau & Guo, 2023).
 
 ### 9.2 Documented risks for novices
 
-The risk literature has moved from speculation to evidence:
+The risk literature has moved from speculation to evidence, and has since
+been systematically reviewed (Bernstein et al., 2025):
 
 - **Over-reliance and the illusion of competence.** In observational and
   eye-tracking studies of novices solving problems with GenAI, Prather et
@@ -871,7 +936,10 @@ The risk literature has moved from speculation to evidence:
   without understanding, *believed they were progressing*, and finished with
   inflated estimates of their own ability. The authors warn of a "widening
   gap" between the two groups — a finding directly reminiscent of learning
-  edge momentum (Robins, 2010), now with a compounding tool.
+  edge momentum (Robins, 2010), now with a compounding tool. Usability work
+  with Copilot describes the interaction patterns underneath: novices
+  either "shepherd" the assistant towards a plan they own, or "drift" along
+  with its suggestions without one (Prather et al., 2024c).
 - **Metacognitive load shifts.** Working with an AI assistant does not
   remove difficulty; it relocates it to prompt formulation, output
   evaluation, and knowing-when-to-trust — skills novices lack most
@@ -958,8 +1026,8 @@ explicit AI-use policies that distinguish phases of the curriculum (forbidden
 / permitted-with-disclosure / required) rather than blanket rules. The
 integrity literature emphasises that policy clarity plus authentic
 AI-permitted tasks reduces violations better than detection arms races,
-since AI-text detectors are unreliable for code and unfair to non-native
-speakers.
+since AI-text detectors are unreliable for code and demonstrably biased
+against non-native speakers of English (Liang et al., 2023).
 
 ### 9.6 What is genuinely unknown
 
@@ -1018,8 +1086,9 @@ al., 2024a; Kazemitabaar et al., 2023).
 
 ## 11. Recommendations for practice
 
-Condensed, opinionated, and traceable to the sections above. For a first
-programming semester at bachelor or graduaat level:
+Condensed, opinionated, and traceable to the sections above (Brown &
+Wilson, 2018, offer a compact practitioner-oriented counterpart). For a
+first programming semester at bachelor or graduaat level:
 
 1. **Sequence comprehension before production.** Run lessons on a
    PRIMM-like cycle; assess tracing and explaining explicitly (§2.3, §4.5).
@@ -1030,8 +1099,9 @@ programming semester at bachelor or graduaat level:
 4. **Teach the notional machine explicitly** — tracing protocols, state
    diagrams, visualisers — and teach error-message reading as content
    (§2.2, §5.3).
-5. **Model process live.** Live-code with mistakes and narration; show
-   debugging as a discipline, not an embarrassment (§4.6).
+5. **Model process live, and teach process explicitly.** Live-code with
+   mistakes and narration; teach a debugging method and a problem-solving
+   stage model as content, not by osmosis (§4.6, §4.9).
 6. **Structure collaboration.** Pair programming with taught protocols and
    role rotation; peer instruction for concept-heavy sessions (§4.4).
 7. **Design for self-efficacy.** Early wins, recoverable failure, retakes,
@@ -1077,16 +1147,24 @@ of this bibliography they cover:
   itself and search there.
 - **Taylor & Francis Online**. Covers *Computer Science Education* (Sentance,
   Xie, Robins, Quille & Bergin, Kinnunen & Simon, Barker & Garvin-Doxas,
-  Robins et al. 2003), *Educational Psychologist* (Kirschner et al.),
+  Robins et al. 2003, McCauley et al. 2008, Fowler et al. 2022),
+  *Educational Psychologist* (Kirschner et al.),
   *Cognition and Instruction* (Kapur), and *Assessment in Education* (Black
   & Wiliam). Full text verified, including the back volumes.
 - **SpringerLink**: *Educational Psychology Review* (Sweller et al.),
-  *Higher Education* (Biggs). The *International Journal of STEM Education*
-  (Margulieux et al., 2020) is open access in any case.
+  *Higher Education* (Biggs), and *Nature* (Yeager et al., 2019; licensed
+  2010–present via Springer Complete Journals). The *International Journal
+  of STEM Education* (Margulieux et al., 2020) is open access in any case.
 - **SAGE Journals Online**: *Psychological Science in the Public Interest*
   (Dunlosky et al.), *Review of Educational Research* (Sinha & Kapur).
+- **JSTOR**: *Psychological Science* (Sisk et al., 2018) is in the licensed
+  JSTOR backfile (1990–2020).
 - **EBSCO (PsycARTICLES)**: *Journal of Personality and Social Psychology*
   (Cheryan et al.) — found via Quick Search, full text available.
+- **EBSCO (Academic Search Premier)**: *Studies in Higher Education*
+  (Jackson, 2015) — full text with a 12-month embargo, so recent issues lag.
+- **Open access journals**: *Patterns* (Liang et al., 2023) and *PLOS
+  Computational Biology* (Brown & Wilson, 2018) are fully open access.
 - **Quick Search** (WorldCat Discovery) works well for journal articles in
   general; for anything ACM, search the ACM Digital Library directly.
 
@@ -1172,6 +1250,12 @@ Education (SIGCSE '19)*. ACM.
 Bennedsen, J., & Caspersen, M. E. (2007). Failure rates in introductory
 programming. *ACM SIGCSE Bulletin, 39*(2), 32–36.
 
+Bernstein, S., Rahman, A., Sharifi, N., Terbish, A., & MacNeil, S. (2025).
+Beyond the benefits: A systematic review of the harms and consequences of
+generative AI in computing education. In *Proceedings of the 25th Koli
+Calling International Conference on Computing Education Research (Koli
+Calling '25)*. ACM. https://doi.org/10.1145/3769994.3770036
+
 Bennedsen, J., & Caspersen, M. E. (2019). Failure rates in introductory
 programming: 12 years later. *ACM Inroads, 10*(2), 30–36.
 
@@ -1188,6 +1272,10 @@ Technology, Middlesex University.
 Brown, N. C. C., & Altadmri, A. (2017). Novice Java programming mistakes:
 Large-scale data vs. educator beliefs. *ACM Transactions on Computing
 Education, 17*(2), Article 7. https://doi.org/10.1145/2994154
+
+Brown, N. C. C., & Wilson, G. (2018). Ten quick tips for teaching
+programming. *PLOS Computational Biology, 14*(4), Article e1006023.
+https://doi.org/10.1371/journal.pcbi.1006023
 
 CC2020 Task Force. (2020). *Computing Curricula 2020: Paradigms for global
 computing education*. ACM/IEEE Computer Society.
@@ -1277,6 +1365,16 @@ Testing OpenAI's Codex on CS2 programming exercises. In *Proceedings of the
 Fisher, A., & Margolis, J. (2002). Unlocking the clubhouse: The Carnegie
 Mellon experience. *ACM SIGCSE Bulletin, 34*(2), 79–83.
 
+Fowler, M., Smith, D. H., IV, Hassan, M., Poulsen, S., West, M., & Zilles,
+C. (2022). Reevaluating the relationship between explaining, tracing, and
+writing skills in CS1 in a replication study. *Computer Science Education,
+32*(3), 355–383. https://doi.org/10.1080/08993408.2022.2079866
+
+Guo, P. J. (2013). Online Python Tutor: Embeddable web-based program
+visualization for CS education. In *Proceedings of the 44th ACM Technical
+Symposium on Computer Science Education (SIGCSE '13)*. ACM.
+https://doi.org/10.1145/2445196.2445368
+
 Guzdial, M. (2003). A media computation course for non-majors. In
 *Proceedings of the 8th Annual Conference on Innovation and Technology in
 Computer Science Education (ITiCSE '03)*. ACM.
@@ -1303,6 +1401,10 @@ Ihantola, P., Ahoniemi, T., Karavirta, V., & Seppälä, O. (2010). Review of
 recent systems for automatic assessment of programming assignments. In
 *Proceedings of the 10th Koli Calling International Conference on Computing
 Education Research (Koli Calling '10)*. ACM.
+
+Jackson, D. (2015). Employability skill development in work-integrated
+learning: Barriers and best practice. *Studies in Higher Education, 40*(2),
+350–367. https://doi.org/10.1080/03075079.2013.842221
 
 Kapur, M. (2008). Productive failure. *Cognition and Instruction, 26*(3),
 379–424. https://doi.org/10.1080/07370000802212669
@@ -1357,6 +1459,10 @@ Becker, B. A. (2023). Using large language models to enhance programming
 error messages. In *Proceedings of the 54th ACM Technical Symposium on
 Computer Science Education (SIGCSE '23)*. ACM.
 
+Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J. (2023). GPT
+detectors are biased against non-native English writers. *Patterns, 4*(7),
+Article 100779. https://doi.org/10.1016/j.patter.2023.100779
+
 Liffiton, M., Sheese, B. E., Savelka, J., & Denny, P. (2024). CodeHelp:
 Using large language models with guardrails for scalable support in
 programming classes. In *Proceedings of the 23rd Koli Calling International
@@ -1369,10 +1475,26 @@ Thomas, L. (2004). A multi-national study of reading and tracing skills in
 novice programmers. In *Working Group Reports from ITiCSE on Innovation and
 Technology in Computer Science Education (ITiCSE-WGR '04)*. ACM.
 
+Lister, R., Fidge, C., & Teague, D. (2009). Further evidence of a
+relationship between explaining, tracing and writing skills in introductory
+programming. In *Proceedings of the 14th Annual ACM SIGCSE Conference on
+Innovation and Technology in Computer Science Education (ITiCSE '09)*. ACM.
+
 Liu, R., Zenke, C., Liu, C., Holmes, A., Thornton, P., & Malan, D. J.
 (2024). Teaching CS50 with AI: Leveraging generative artificial intelligence
 in computer science education. In *Proceedings of the 55th ACM Technical
 Symposium on Computer Science Education (SIGCSE '24)*. ACM.
+
+Loksa, D., Ko, A. J., Jernigan, W., Oleson, A., Mendez, C. J., & Burnett,
+M. M. (2016). Programming, problem solving, and self-awareness: Effects of
+explicit guidance. In *Proceedings of the 2016 CHI Conference on Human
+Factors in Computing Systems (CHI '16)* (pp. 1449–1461). ACM.
+https://doi.org/10.1145/2858036.2858252
+
+Loksa, D., Margulieux, L., Becker, B. A., Craig, M., Denny, P., Pettit, R.,
+& Prather, J. (2022). Metacognition and self-regulation in programming
+education: Theories and exemplars of use. *ACM Transactions on Computing
+Education, 22*(4), Article 39. https://doi.org/10.1145/3487050
 
 Lopez, M., Whalley, J., Robbins, P., & Lister, R. (2008). Relationships
 between reading, tracing and writing skills in introductory programming. In
@@ -1387,6 +1509,10 @@ Computer Science Education (ITiCSE '18 Companion)*. ACM.
 
 Lyon, L. A., & Denner, J. (2016). *Student perspectives of community college
 pathways to computer science bachelor's degrees* [Report]. ETR & Google.
+
+Lyon, L. A., & Denner, J. (2019). Chutes and ladders: Institutional setbacks
+on the computer science community college transfer pathway. *ACM
+Transactions on Computing Education, 19*(3), Article 25.
 
 MacNeil, S., Tran, A., Hellas, A., Kim, J., Sarsa, S., Denny, P., Bernstein,
 S., & Leinonen, J. (2023). Experiences from using code explanations
@@ -1420,6 +1546,16 @@ self-efficacy, and fear of failure interactions with how novices use LLMs to
 solve programming problems. In *Proceedings of the 2024 Conference on
 Innovation and Technology in Computer Science Education (ITiCSE '24)*. ACM.
 
+McCane, B., Ott, C., Meek, N., & Robins, A. (2017). Mastery learning in
+introductory programming. In *Proceedings of the Nineteenth Australasian
+Computing Education Conference (ACE '17)*. ACM.
+https://doi.org/10.1145/3013499.3013501
+
+McCauley, R., Fitzgerald, S., Lewandowski, G., Murphy, L., Simon, B.,
+Thomas, L., & Zander, C. (2008). Debugging: A review of the literature from
+an educational perspective. *Computer Science Education, 18*(2), 67–92.
+https://doi.org/10.1080/08993400802114581
+
 McCracken, M., Almstrum, V., Diaz, D., Guzdial, M., Hagan, D., Kolikant,
 Y. B.-D., Laxer, C., Thomas, L., Utting, I., & Wilusz, T. (2001). A
 multi-national, multi-institutional study of assessment of programming
@@ -1428,6 +1564,11 @@ skills of first-year CS students. *ACM SIGCSE Bulletin, 33*(4), 125–180.
 McDowell, C., Werner, L., Bullock, H. E., & Fernald, J. (2006). Pair
 programming improves student retention, confidence, and program quality.
 *Communications of the ACM, 49*(8), 90–95.
+
+Michaeli, T., & Romeike, R. (2019). Improving debugging skills in the
+classroom: The effects of teaching a systematic debugging process. In
+*Proceedings of the 14th Workshop in Primary and Secondary Computing
+Education (WiPSCE '19)*. ACM. https://doi.org/10.1145/3361721.3361724
 
 Morrison, B. B., Margulieux, L. E., & Guzdial, M. (2015). Subgoals, context,
 and worked examples in learning computing problem solving. In *Proceedings
@@ -1442,6 +1583,12 @@ Murphy, L., Fitzgerald, S., Lister, R., & McCauley, R. (2012). Ability to
 'explain in plain English' linked to proficiency in computer-based
 programming. In *Proceedings of the Ninth Annual International Conference on
 International Computing Education Research (ICER '12)*. ACM.
+
+Ott, C., McCane, B., & Meek, N. (2021). Mastery learning in CS1 — an
+invitation to procrastinate? Reflecting on six years of mastery learning.
+In *Proceedings of the 26th ACM Conference on Innovation and Technology in
+Computer Science Education (ITiCSE '21)* (pp. 18–24). ACM.
+https://doi.org/10.1145/3430665.3456321
 
 Paiva, J. C., Leal, J. P., & Figueira, Á. (2022). Automated assessment in
 computer science education: A state-of-the-art review. *ACM Transactions on
@@ -1476,6 +1623,12 @@ https://doi.org/10.1145/2839509.2844642
 Porter, L., & Zingaro, D. (2023). *Learn AI-assisted Python programming:
 With GitHub Copilot and ChatGPT*. Manning.
 
+Prather, J., Pettit, R., McMurry, K., Peters, A., Homer, J., & Cohen, M.
+(2018). Metacognitive difficulties faced by novice programmers in automated
+assessment tools. In *Proceedings of the 2018 ACM Conference on
+International Computing Education Research (ICER '18)* (pp. 41–50). ACM.
+https://doi.org/10.1145/3230977.3230981
+
 Prather, J., Denny, P., Leinonen, J., Becker, B. A., Albluwi, I., Craig, M.,
 Keuning, H., Kiesler, N., Kohn, T., Luxton-Reilly, A., MacNeil, S., Petersen,
 A., Pettit, R., Reeves, B. N., & Savelka, J. (2023). The robots are here:
@@ -1495,6 +1648,17 @@ comprehensive review of current trends in generative AI research, teaching
 practices, and tools. In *Proceedings of the 2024 Working Group Reports on
 Innovation and Technology in Computer Science Education (ITiCSE-WGR '24)*.
 ACM.
+
+Prather, J., Reeves, B. N., Denny, P., Becker, B. A., Leinonen, J.,
+Luxton-Reilly, A., Powell, G., Finnie-Ansley, J., & Santos, E. A. (2024c).
+"It's weird that it knows what I want": Usability and interactions with
+Copilot for novice programmers. *ACM Transactions on Computer-Human
+Interaction, 31*(1), Article 4. https://doi.org/10.1145/3617367
+
+Qian, Y., & Lehman, J. (2017). Students' misconceptions and other
+difficulties in introductory programming: A literature review. *ACM
+Transactions on Computing Education, 18*(1), Article 1.
+https://doi.org/10.1145/3077618
 
 Quille, K., & Bergin, S. (2019). CS1: How will they do? How can we help? A
 decade of research and practice. *Computer Science Education, 29*(2–3),
@@ -1556,6 +1720,11 @@ Sinha, T., & Kapur, M. (2021). When problem solving followed by instruction
 works: Evidence for productive failure. *Review of Educational Research,
 91*(5), 761–798.
 
+Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L., & Macnamara, B. N.
+(2018). To what extent and under which circumstances are growth mind-sets
+important to academic achievement? Two meta-analyses. *Psychological
+Science, 29*(4), 549–571. https://doi.org/10.1177/0956797617739704
+
 Soloway, E. (1986). Learning to program = learning to construct mechanisms
 and explanations. *Communications of the ACM, 29*(9), 850–858.
 
@@ -1608,6 +1777,12 @@ approaches for teaching introductory programming and their influence on
 success. In *Proceedings of the Tenth Annual Conference on International
 Computing Education Research (ICER '14)*. ACM.
 
+Vihavainen, A., Paksula, M., & Luukkainen, M. (2011). Extreme
+apprenticeship method in teaching programming for beginners. In
+*Proceedings of the 42nd ACM Technical Symposium on Computer Science
+Education (SIGCSE '11)* (pp. 93–98). ACM.
+https://doi.org/10.1145/1953163.1953196
+
 Vygotsky, L. S. (1978). *Mind in society: The development of higher
 psychological processes*. Harvard University Press.
 
@@ -1634,6 +1809,15 @@ Xie, B., Loksa, D., Nelson, G. L., Davidson, M. J., Dong, D., Kwik, H.,
 Tan, A. H., Hwa, L., Li, M., & Ko, A. J. (2019). A theory of instruction for
 introductory programming skills. *Computer Science Education, 29*(2–3),
 205–253. https://doi.org/10.1080/08993408.2019.1565235
+
+Yang, S., Baird, M., O'Rourke, E., Brennan, K., & Schneider, B. (2024).
+Decoding debugging instruction: A systematic literature review of debugging
+interventions. *ACM Transactions on Computing Education, 24*(4).
+https://doi.org/10.1145/3690652
+
+Yeager, D. S., Hanselman, P., Walton, G. M., et al. (2019). A national
+experiment reveals where a growth mindset improves achievement. *Nature,
+573*(7774), 364–369. https://doi.org/10.1038/s41586-019-1466-y
 
 
 
