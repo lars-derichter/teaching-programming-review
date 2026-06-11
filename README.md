@@ -54,7 +54,10 @@ has minor changes.
 
 ### Review by Gemini Pro
 
-For no reason whatsoever I switched to Dutch. Gemini Prompt:
+As part of the experiment I wanted Google’s AI to do a review of Claude’s work.
+For no reason whatsoever I switched to Dutch.
+
+Gemini Prompt:
 
 ```markdown
 Beoordeel dit document zoals een universiteitsprofessor in de
@@ -63,6 +66,8 @@ onderwijswetenschappen met een focus op programmeeronderwijs dit zou doen.
 Maak een geprioritiseerde lijst met verbetersuggesties en een lijst met
 belangrijke referenties die misschien nog ontbreken.
 ```
+
+### Final version and Claude’s answer to Gemini
 
 I then used Gemini’s answer as part of this Claude prompt:
 
