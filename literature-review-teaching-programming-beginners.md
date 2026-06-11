@@ -283,7 +283,7 @@ and breadth of participation but is insufficient as a theory of *skill
 acquisition*: meaningful projects without explicit instruction reproduce the
 McCracken problem (section 2.3). Conversely, pure CLT-driven drill produces
 competence that students may see no reason to use. Mark Guzdial's career
-arc is instructive: media computation (section 4.6) is explicitly an attempt
+arc is instructive: media computation (section 4.7) is explicitly an attempt
 to keep constructionist motivation while adding structure and context
 (Guzdial, 2013, 2015).
 
@@ -551,7 +551,7 @@ evidenced:
 
 For vocationally oriented web programmes the genuine tension is between a
 pedagogically gentle first language (Python) and immediate authenticity
-(JavaScript in the browser). The contextualisation evidence (section 4.6)
+(JavaScript in the browser). The contextualisation evidence (section 4.7)
 cuts towards authenticity; the cognitive-load evidence cuts towards
 gentleness. A defensible reading: either can work, but the JavaScript route
 demands more aggressive scaffolding of its rough edges (coercion, async,
@@ -823,7 +823,7 @@ Almost everything in sections 4–7 applies with at most re-weighting:
   are *more* important, not less, for students with weaker academic
   preparation — these are precisely the practices whose largest effects were
   measured in at-risk groups (Margulieux et al., 2020).
-- Contextualisation (4.6) is non-negotiable: tasks should visibly belong to
+- Contextualisation (4.7) is non-negotiable: tasks should visibly belong to
   the target occupation from early on.
 - Affective design (7.1–7.3) carries extra weight given the population's
   prior-setback profile.
@@ -910,7 +910,7 @@ The opportunity literature is equally concrete:
 - **Content generation for instructors.** LLMs generate practice exercises,
   test cases, and worked explanations cheaply and at acceptable quality with
   human review (Sarsa et al., 2022) — directly serving the "many small
-  problems" regime (4.3) and personalised contexts (4.6).
+  problems" regime (4.3) and personalised contexts (4.7).
 - **New exercise types.** "Prompt Problems" invert the task: students are
   given a visual/behavioural specification and must construct a prompt that
   makes an LLM produce correct code, forcing precise specification and
@@ -1043,7 +1043,7 @@ programming semester at bachelor or graduaat level:
    authentic work with disclosure and process assessment; taught AI
    literacy (§9.4–9.5).
 10. **Contextualise relentlessly** in the students' target occupation, and
-    prepare them for workplace code before placements (§4.6, §8.3).
+    prepare them for workplace code before placements (§4.7, §8.3).
 
 ## 12. Limitations of this review
 
