@@ -164,3 +164,81 @@ field actually stands.
 - The associate-degree evidence gap (§8.1) remains real; the additions
   document the population better but do not close the gap — it is the
   research opportunity the document already identifies.
+
+---
+
+# Second pass: response to an external (Gemini) review
+
+**Reviewer:** Claude, June 2026
+**Scope:** assessment and (where warranted) implementation of priorities
+1, 2, 3, and 5 from a Gemini review; priority 4 (block-to-text
+transition) skipped at Lars's instruction. All new references verified
+online (ACM DL, Taylor & Francis, CAST) before adding.
+
+## Assessment of the four priorities
+
+1. **Metacognition/SRL — largely already covered, one valid residue.**
+   The Gemini review asked for metacognition as if absent, and proposed
+   Loksa et al. (2016) as a missing must-read — but §4.9 already existed
+   (added in the first pass) and already cites Loksa et al. (2016, 2022)
+   and Prather et al. (2018). The valid residue: self-regulated learning
+   *beyond* the single problem-solving episode (course-level planning and
+   monitoring). Added a paragraph to §4.9 with Falkner, Vivian & Falkner
+   (2014, ITiCSE), linked to the existing Margulieux et al. (2024)
+   affect–SRL finding.
+2. **Constructive alignment — critique partly incorrect.** §6.2 already
+   opened with constructive alignment (Biggs, 1996), which the review
+   claimed was missing. Implemented the defensible residue: spelled out
+   the principle, added Biggs & Tang (2011) as the standard treatment,
+   and added a sentence on programme-level alignment (sampling process as
+   well as product) for competence-oriented graduaat programmes, tied to
+   the existing §8.2 and §9.4 material. Programmatic assessment as a full
+   topic (van der Vleuten) was *not* imported — beyond the document's
+   scope and the CS1 evidence base.
+3. **UDL — correct gap, added with calibration.** New closing paragraph
+   in §7.3: UDL as a structural design framework (CAST, 2024), framed
+   honestly — its prescriptions largely repackage practices the review
+   already evidences, the Capp (2017) meta-analysis shows process gains
+   but undemonstrated outcome effects, and computing-specific evaluations
+   are scarce. Positioned as an organising checklist, not a validated
+   intervention.
+4. *(Skipped per instruction.)*
+5. **Computational thinking — implemented as a scope note, not an
+   import.** The first pass deliberately excluded the CT literature; that
+   decision stands for the literature itself, but the external review is
+   right that the document should *position* itself relative to CT. Added
+   a boundary paragraph to §1.2 (Wing, 2006; Denning, 2017) explaining
+   why the review stays with programming as the measurable skill.
+
+Also added from the review's reference list: **Ben-Ari (1998)** to §3.2 —
+a genuine omission; the constructivist argument for explicitly supplying
+a machine model bridges §3.2 and the notional-machine consensus (§2.2).
+
+## References added (7, all bibliographic details verified online)
+
+- Ben-Ari (1998), *SIGCSE Bulletin, 30*(1), 257–261 — DOI verified.
+- Biggs & Tang (2011), *Teaching for quality learning at university*
+  (4th ed.), Open University Press.
+- Capp (2017), *International Journal of Inclusive Education, 21*(8),
+  791–807 — DOI verified.
+- CAST (2024), UDL Guidelines version 3.0 — version and year checked
+  against udlguidelines.cast.org (3.0 released July 2024).
+- Denning (2017), *CACM, 60*(6), 33–39 — DOI verified.
+- Falkner, Vivian & Falkner (2014), ITiCSE '14, pp. 291–296 — DOI
+  verified.
+- Wing (2006), *CACM, 49*(3), 33–35 — DOI verified against the ACM DL
+  (note: search engines conflate it with Wing's 2007 SIGCSE abstract,
+  which has a different DOI).
+
+## Other changes
+
+- **Fixed an alphabetisation error:** Bernstein et al. (2025) sat between
+  the two Bennedsen & Caspersen entries; reordered.
+- **Appendix:** Biggs & Tang (2011) added to the books list;
+  *International Journal of Inclusive Education* (Capp, 2017) noted as
+  Taylor & Francis but not individually verified for OU access.
+- **Count correction:** the first pass reported 129 reference entries;
+  the actual pre-pass count was 130. With 7 additions the list now holds
+  137 entries.
+- No headings were added, renamed, or renumbered, so the Contents list
+  and §-cross-references needed no changes.

@@ -78,6 +78,17 @@ The review covers:
   Education*), plus general educational psychology where it underpins the
   field (cognitive load theory, self-efficacy, formative assessment).
 
+A boundary note on *computational thinking* (CT): since Wing (2006) much
+public discussion has framed programming inside a broader general-purpose
+skill set — abstraction, decomposition, algorithmic thinking — of which
+writing code is only one expression. This review deliberately stays with
+programming as the directly teachable and measurable skill: the CT
+construct remains definitionally contested and hard to assess
+independently of programming (Denning, 2017), and in programmes that
+train software developers the two largely coincide in practice. Where
+CT-derived frameworks have produced concrete instructional designs, they
+appear under those designs (notably Use-Modify-Create, §4.5).
+
 The review is *narrative*, not systematic: it does not exhaustively catalogue
 every study, but synthesises the major findings, identifies schools of
 thought, and weighs the strength of evidence. Where systematic reviews and
@@ -288,6 +299,15 @@ that programming is a medium for creative expression, not only an
 engineering discipline. Its fingerprints are on project-based curricula,
 creative computing, media computation (Guzdial, 2003), and the "low floor,
 high ceiling, wide walls" design language of beginner tools.
+
+The canonical application of constructivist theory to computing, however,
+cuts *against* naive discovery learning: Ben-Ari (1998) argued that
+because novices — unlike in physics or arithmetic — bring no effective
+prior model of a computer to build on, knowledge construction fails
+unless instruction explicitly supplies a viable model of the machine.
+The argument anticipates the notional-machine consensus of section 2.2
+and explains why even constructionist classrooms need explicit
+model-building.
 
 The honest reading of the evidence is that constructionism wins on motivation
 and breadth of participation but is insufficient as a theory of *skill
@@ -536,6 +556,18 @@ instruction benefits novices (Loksa et al., 2022). The theme has acquired
 new urgency in the LLM era: the documented failure mode of struggling
 students working with AI assistants is precisely metacognitive (§9.2).
 
+The same logic extends beyond the single task to *self-regulated
+learning* — how students plan, monitor, and evaluate their study as a
+whole. When computing students' strategies were actually catalogued from
+their own reflections, self-regulation proved present but uneven, with
+the more sophisticated planning and monitoring strategies concentrated
+in later-year students; the recommendation is to teach and prompt such
+strategies explicitly inside the course rather than assume them (Falkner
+et al., 2014; Loksa et al., 2022). The affective link is direct:
+self-regulation interacts with self-efficacy and fear of failure in
+shaping how productively novices use help, including AI help
+(Margulieux et al., 2024; §7.1, §9.2).
+
 **Debugging.** Although novices spend much of their time debugging, it is
 rarely taught as content. The literature has long documented that novices
 debug qualitatively differently from experts — single fixed hypothesis,
@@ -679,15 +711,24 @@ in CS1).
 
 ### 6.2 Aligning assessment with the skill hierarchy
 
-Constructive alignment (Biggs, 1996) plus the skill-hierarchy evidence
-(section 2.3) yields a concrete prescription: assessments in early
+Constructive alignment — the principle that intended learning outcomes,
+learning activities, and assessment must be designed as one system, so
+that the assessment *is* the curriculum as students experience it (Biggs,
+1996; the standard book-length treatment is Biggs & Tang, 2011) — plus
+the skill-hierarchy evidence (section 2.3) yields a concrete
+prescription: assessments in early
 programming should *explicitly* include tracing items, explain-in-plain-
 English items, Parsons items, fix-this-code items, and writing items — not
 writing alone. The BRACElet project demonstrated such mixed exams and their
 diagnostic value (Whalley et al., 2006; Lopez et al., 2008). Mixed-item
 exams also de-risk the failure cliff: students with partial mastery can
 demonstrate it, which matters for the momentum effects described by Robins
-(2010).
+(2010). For competence-oriented programmes such as the graduaat,
+alignment also operates above the level of the single test: if the
+intended outcome is the ability to develop software in context, the
+assessment programme as a whole must sample the development *process* as
+well as the product — which is where the process-visible assessment of
+§9.4 and the project lines of §8.2 belong.
 
 On the summative side, the integrity pressures of take-home programming work
 predate generative AI but are now acute (section 9.5). The emerging
@@ -774,6 +815,22 @@ routinely misread as talent; structurally separating experienced beginners
 (placement, honours tracks) or neutralising the advantage (contexts novel to
 everyone, as in media computation) are the documented countermeasures
 (Margolis & Fisher, 2002; Guzdial, 2013).
+
+Climate findings of this kind are increasingly packaged for
+practitioners in structural design frameworks, the most prominent being
+Universal Design for Learning (UDL): offer multiple means of engagement,
+representation, and action/expression, so that barriers are removed in
+the design of the course rather than retrofitted per student (CAST,
+2024). For programming courses its prescriptions largely repackage
+practices this review already evidences on other grounds — multiple
+representations of program state (§4.8), mixed assessment formats
+(§6.2), contexts that do not presuppose a hobbyist background (§4.7).
+The honest caveat: direct evidence for UDL as a package is thin. A
+meta-analysis found it improves the learning process as students
+experience it, while effects on measured educational outcomes remain
+undemonstrated (Capp, 2017), and computing-specific evaluations are
+scarce. Treat UDL as an organising checklist for the evidenced
+practices, not as an independently validated intervention.
 
 For an associate-degree audience, this literature matters in a specific way:
 many students arrive via non-traditional routes with weaker academic
@@ -1150,7 +1207,9 @@ of this bibliography they cover:
   Robins et al. 2003, McCauley et al. 2008, Fowler et al. 2022),
   *Educational Psychologist* (Kirschner et al.),
   *Cognition and Instruction* (Kapur), and *Assessment in Education* (Black
-  & Wiliam). Full text verified, including the back volumes.
+  & Wiliam). Full text verified, including the back volumes. The
+  *International Journal of Inclusive Education* (Capp, 2017) is from the
+  same publisher but its OU access was not individually verified.
 - **SpringerLink**: *Educational Psychology Review* (Sweller et al.),
   *Higher Education* (Biggs), and *Nature* (Yeager et al., 2019; licensed
   2010–present via Springer Complete Journals). The *International Journal
@@ -1185,7 +1244,8 @@ of this bibliography they cover:
 - **Books are generally not in the OU e-collection.** This affects Papert
   (1980), Bandura (1997), Lave & Wenger (1991), Vygotsky (1978), Margolis &
   Fisher (2002), Dweck (2006), Fincher & Robins (2019), van Merriënboer &
-  Kirschner (2018), Hermans (2021), Guzdial (2015), and Porter & Zingaro
+  Kirschner (2018), Hermans (2021), Guzdial (2015), Biggs & Tang (2011),
+  and Porter & Zingaro
   (2023). Partial workarounds, checked in June 2026:
   - An **O'Reilly Learning** subscription (learning.oreilly.com) carries
     Hermans (2021), *The programmer's brain* (also as audiobook and video
@@ -1247,8 +1307,14 @@ the evolution of introductory programming education research. In
 *Proceedings of the 50th ACM Technical Symposium on Computer Science
 Education (SIGCSE '19)*. ACM.
 
+Ben-Ari, M. (1998). Constructivism in computer science education. *ACM
+SIGCSE Bulletin, 30*(1), 257–261. https://doi.org/10.1145/274790.274308
+
 Bennedsen, J., & Caspersen, M. E. (2007). Failure rates in introductory
 programming. *ACM SIGCSE Bulletin, 39*(2), 32–36.
+
+Bennedsen, J., & Caspersen, M. E. (2019). Failure rates in introductory
+programming: 12 years later. *ACM Inroads, 10*(2), 30–36.
 
 Bernstein, S., Rahman, A., Sharifi, N., Terbish, A., & MacNeil, S. (2025).
 Beyond the benefits: A systematic review of the harms and consequences of
@@ -1256,11 +1322,11 @@ generative AI in computing education. In *Proceedings of the 25th Koli
 Calling International Conference on Computing Education Research (Koli
 Calling '25)*. ACM. https://doi.org/10.1145/3769994.3770036
 
-Bennedsen, J., & Caspersen, M. E. (2019). Failure rates in introductory
-programming: 12 years later. *ACM Inroads, 10*(2), 30–36.
-
 Biggs, J. (1996). Enhancing teaching through constructive alignment.
 *Higher Education, 32*(3), 347–364. https://doi.org/10.1007/BF00138871
+
+Biggs, J., & Tang, C. (2011). *Teaching for quality learning at
+university: What the student does* (4th ed.). Open University Press.
 
 Black, P., & Wiliam, D. (1998). Assessment and classroom learning.
 *Assessment in Education: Principles, Policy & Practice, 5*(1), 7–74.
@@ -1276,6 +1342,14 @@ Education, 17*(2), Article 7. https://doi.org/10.1145/2994154
 Brown, N. C. C., & Wilson, G. (2018). Ten quick tips for teaching
 programming. *PLOS Computational Biology, 14*(4), Article e1006023.
 https://doi.org/10.1371/journal.pcbi.1006023
+
+Capp, M. J. (2017). The effectiveness of universal design for learning: A
+meta-analysis of literature between 2013 and 2016. *International Journal
+of Inclusive Education, 21*(8), 791–807.
+https://doi.org/10.1080/13603116.2017.1325074
+
+CAST. (2024). *Universal Design for Learning Guidelines version 3.0*.
+https://udlguidelines.cast.org
 
 CC2020 Task Force. (2020). *Computing Curricula 2020: Paradigms for global
 computing education*. ACM/IEEE Computer Society.
@@ -1299,6 +1373,10 @@ Cutts, Q., Cutts, E., Draper, S., O'Donnell, P., & Saffrey, P. (2010).
 Manipulating mindset to positively influence introductory programming
 performance. In *Proceedings of the 41st ACM Technical Symposium on Computer
 Science Education (SIGCSE '10)*. ACM.
+
+Denning, P. J. (2017). Remaining trouble spots with computational
+thinking. *Communications of the ACM, 60*(6), 33–39.
+https://doi.org/10.1145/2998438
 
 Denny, P., Prather, J., Becker, B. A., Finnie-Ansley, J., Hellas, A.,
 Leinonen, J., Luxton-Reilly, A., Reeves, B. N., Santos, E. A., & Sarsa, S.
@@ -1339,6 +1417,12 @@ Ericson, B. J., Foley, J. D., & Rick, J. (2018). Evaluating the efficiency
 and effectiveness of adaptive Parsons problems. In *Proceedings of the 2018
 ACM Conference on International Computing Education Research (ICER '18)*.
 ACM.
+
+Falkner, K., Vivian, R., & Falkner, N. J. G. (2014). Identifying computer
+science self-regulated learning strategies. In *Proceedings of the 2014
+Conference on Innovation & Technology in Computer Science Education
+(ITiCSE '14)* (pp. 291–296). ACM.
+https://doi.org/10.1145/2591708.2591715
 
 Fincher, S., Jeuring, J., Miller, C. S., Donaldson, P., du Boulay, B.,
 Hauswirth, M., Hellas, A., Hermans, F., Lewis, C., Mühling, A., Pearce,
@@ -1804,6 +1888,9 @@ P. K. A., & Prasad, C. (2006). An Australasian study of reading and
 comprehension skills in novice programmers, using the Bloom and SOLO
 taxonomies. In *Proceedings of the 8th Australasian Conference on Computing
 Education (ACE '06)*. Australian Computer Society.
+
+Wing, J. M. (2006). Computational thinking. *Communications of the ACM,
+49*(3), 33–35. https://doi.org/10.1145/1118178.1118215
 
 Xie, B., Loksa, D., Nelson, G. L., Davidson, M. J., Dong, D., Kwik, H.,
 Tan, A. H., Hwa, L., Li, M., & Ko, A. J. (2019). A theory of instruction for
