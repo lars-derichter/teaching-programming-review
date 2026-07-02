@@ -249,3 +249,15 @@ Sources used for verification:
 
 I had Claude create a kind of logbook from version 2 onwards:
 [claude-review-log.md](claude-review-log.md)
+
+## The reader
+
+In a follow-up session, Claude turned the review into a course reader for
+students learning how to teach programming to beginners in an associate
+degree programme: fifteen key articles (selected from the review, downloaded
+via open access and the OU library, and each read in full before the final
+keep-or-replace decision), bundled with an overall introduction, theme
+introductions, and a per-article introduction with reading guide and
+discussion questions.
+
+Start here: [reader/README.md](reader/README.md)
