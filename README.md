@@ -261,3 +261,8 @@ introductions, and a per-article introduction with reading guide and
 discussion questions.
 
 Start here: [reader/README.md](reader/README.md)
+
+The complete reader — all fifteen articles plus the introductions and reading
+guides bundled into one PDF — is here:
+[reader/teaching-programming-to-beginners-reader.pdf](reader/teaching-programming-to-beginners-reader.pdf)
+(527 pages, 36 MB).
