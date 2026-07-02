@@ -4,12 +4,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-A single-document repository: one literature review,
-[literature-review-teaching-programming-beginners.md](literature-review-teaching-programming-beginners.md),
-written for Lars De Richter (Thomas More Hogeschool) as groundwork for an
-educational-sciences research project on teaching programming to beginners in
-tertiary education. There is no code, build, lint, or test tooling — all work
-here is editing this Markdown document.
+A documentation repository for Lars De Richter (Thomas More Hogeschool),
+groundwork for an educational-sciences project on teaching programming to
+beginners in tertiary education. Its content is a **drieluik** (triptych) of
+three mutually referencing documents:
+
+1. **The literature review**,
+   [literature-review-teaching-programming-beginners.md](literature-review-teaching-programming-beginners.md)
+   — the full narrative evidence base.
+2. **The reader**, [reader/](reader/) — twenty-one key articles selected from
+   the review, with introductions and reading guides, plus a build tool
+   ([tools/build-reader-pdf.py](tools/build-reader-pdf.py)) that assembles the
+   bundled PDF.
+3. **The leidraad**, [leidraad/leidraad-programmeeronderwijs.md](leidraad/leidraad-programmeeronderwijs.md)
+   — a Dutch practice guide condensing the review into seven recommendations,
+   with hand-written SVG figures in [leidraad/figuren/](leidraad/figuren/).
+
+The three are designed to be read together: the leidraad gives the practice,
+the review the justification and evidence strength, the reader the sources. A
+change to one may need reflecting in the others (e.g. a claim or citation
+added to the leidraad should trace back to the review). The reader's build
+tool aside, there is no code, build, lint, or test tooling — work here is
+editing Markdown (and the leidraad's SVGs).
 
 ## Document status and caveats
 
@@ -24,6 +40,16 @@ here is editing this Markdown document.
   Don't invent or "complete" these — leave them as-is unless verified.
 
 ## Structure and conventions to preserve when editing
+
+The conventions below are written for the literature review; the reader and
+leidraad share the APA and 80-character rules but differ otherwise. The
+leidraad is in Flemish Dutch (see the user's house-style rules), uses seven
+recommendations clustered from the review's §11, labels its callout boxes as
+**Definitie** / **Verdieping** / **Werkvorm** blockquotes, and references the
+review inline as "literatuurstudie §n". Its references are copied verbatim
+from the review's list — don't invent DOIs or page ranges there either.
+
+### The literature review
 
 - 12 numbered top-level sections (`## 1. ...` through `## 12. ...`), plus an
   unnumbered Appendix and References section. The "Contents" block near the

@@ -1,15 +1,34 @@
-# Teaching programming to beginners: a review of the literature
+# Teaching programming to beginners
 
-This review was created as a personal test for the new Claude AI model, Fable 5.
+This repository started as a personal test for the new Claude AI model,
+Fable 5. The resulting literature review was interesting enough to push to
+GitHub, and it has since grown into a **drieluik** (triptych): three
+documents that together form a grounded, research-based foundation for
+teaching programming to beginners.
 
-The resulting ‘paper’ is quite interesting, so I decided to push it to Github.
+1. **The literature review** — the full evidence base: a narrative synthesis
+   of five decades of computing education research, with the strength of each
+   claim calibrated.
+   [literature-review-teaching-programming-beginners.md](literature-review-teaching-programming-beginners.md)
+2. **The reader** — the primary sources themselves: twenty-one key
+   publications selected from the review, each read in full, bundled with
+   introductions and reading guides. [reader/README.md](reader/README.md)
+3. **The leidraad** — the practice guide: the evidence condensed into seven
+   concrete recommendations for the classroom, aimed at lecturers and at
+   students learning to teach.
+   [leidraad/leidraad-programmeeronderwijs.md](leidraad/leidraad-programmeeronderwijs.md)
 
-The document itself is here:
+The three are meant to be used together: the leidraad says *what* to do, the
+review says *why* it holds and how strong the evidence is, and the reader
+lets you go to the sources. The rest of this README documents how each part
+came to be.
+
+## The literature review
+
+The review was created in three passes. The document itself is here:
 [literature-review-teaching-programming-beginners.md](literature-review-teaching-programming-beginners.md)
 
-I took 3 passes for the finished document:
-
-## Pass 1
+### Pass 1
 
 Prompt:
 
@@ -28,7 +47,7 @@ I was not sufficiently clear.
 [Versie 1](https://github.com/lars-derichter/teaching-programming-review/blob/e2f600716abdf63634397ef726b1eec4811fa83c/literature-review-teaching-programming-beginners.md)
 was already very complete.
 
-## Pass 2
+### Pass 2
 
 Now with direct access to scientific databases that are normally behind a
 paywall or university login:
@@ -50,9 +69,9 @@ university professor who has specialised is this area.
 [Versie 2](https://github.com/lars-derichter/teaching-programming-review/blob/b9b2d4abd2449e154e2288e86ef3fec797cee119/literature-review-teaching-programming-beginners.md)
 has minor changes.
 
-## Pass 3
+### Pass 3
 
-### Review by Gemini Pro
+#### Review by Gemini Pro
 
 As part of the experiment I wanted Google’s AI to do a review of Claude’s work.
 For no reason whatsoever I switched to Dutch.
@@ -67,7 +86,7 @@ Maak een geprioritiseerde lijst met verbetersuggesties en een lijst met
 belangrijke referenties die misschien nog ontbreken.
 ```
 
-### Final version and Claude’s answer to Gemini
+#### Final version and Claude’s answer to Gemini
 
 I then used Gemini’s answer as part of this Claude prompt:
 
@@ -266,3 +285,17 @@ The complete reader — all fifteen articles plus the introductions and reading
 guides bundled into one PDF — is here:
 [reader/teaching-programming-to-beginners-reader.pdf](reader/teaching-programming-to-beginners-reader.pdf)
 (527 pages, 36 MB).
+
+## The leidraad
+
+The third part of the drieluik condenses the review into a practice guide
+(*leidraad*) for lecturers: seven concrete, evidence-informed recommendations
+for teaching programming to beginners, modelled on the structure and register
+of Thomas More's *Leidraad EHBO docenten*. It is written in Dutch and is also
+meant as course material for students learning to teach. Its load-bearing
+claims were verified against the primary articles in the reader; where a claim
+rests only on the narrative review, the guide says so.
+
+Start here:
+[leidraad/leidraad-programmeeronderwijs.md](leidraad/leidraad-programmeeronderwijs.md)
+(figures in [leidraad/figuren/](leidraad/figuren/)).
