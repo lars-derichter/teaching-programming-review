@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" font-family="Gentium Book Plus, Georgia, serif">
+  <rect width="760" height="310" fill="#FBF8F0"/>
+  <!-- zone 1 -->
+  <rect x="10" y="30" width="236" height="220" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <rect x="10" y="30" width="5" height="220" fill="#9E3B2D"/>
+  <text x="32" y="66" font-size="24" fill="#B07D2B" font-weight="700">1</text>
+  <text x="32" y="92" font-size="14.5" fill="#2A2925" font-weight="700">De beschermde kern</text>
+  <text x="32" y="116" font-size="11.5" fill="#5E584C">zonder AI</text>
+  <text x="32" y="142" font-size="11" fill="#5E584C">basisvaardigheid in lezen,</text>
+  <text x="32" y="157" font-size="11" fill="#5E584C">traceren en schrijven van</text>
+  <text x="32" y="172" font-size="11" fill="#5E584C">eenvoudige code, aangetoond</text>
+  <text x="32" y="187" font-size="11" fill="#5E584C">onder gecontroleerde</text>
+  <text x="32" y="202" font-size="11" fill="#5E584C">omstandigheden</text>
+  <!-- zone 2 -->
+  <rect x="262" y="30" width="236" height="220" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <rect x="262" y="30" width="5" height="220" fill="#7E9A7C"/>
+  <text x="284" y="66" font-size="24" fill="#B07D2B" font-weight="700">2</text>
+  <text x="284" y="92" font-size="14.5" fill="#2A2925" font-weight="700">Begeleide hulp</text>
+  <text x="284" y="116" font-size="11.5" fill="#5E584C">AI-tutor met vangrails</text>
+  <text x="284" y="142" font-size="11" fill="#5E584C">legt uit, geeft hints en stelt</text>
+  <text x="284" y="157" font-size="11" fill="#5E584C">vragen, maar geeft geen</text>
+  <text x="284" y="172" font-size="11" fill="#5E584C">volledige oplossingen;</text>
+  <text x="284" y="187" font-size="11" fill="#5E584C">altijd beschikbaar naast de</text>
+  <text x="284" y="202" font-size="11" fill="#5E584C">menselijke begeleiding</text>
+  <!-- zone 3 -->
+  <rect x="514" y="30" width="236" height="220" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <rect x="514" y="30" width="5" height="220" fill="#38543E"/>
+  <text x="536" y="66" font-size="24" fill="#B07D2B" font-weight="700">3</text>
+  <text x="536" y="92" font-size="14.5" fill="#2A2925" font-weight="700">AI-toegelaten werk</text>
+  <text x="536" y="116" font-size="11.5" fill="#5E584C">authentieke opdrachten</text>
+  <text x="536" y="142" font-size="11" fill="#5E584C">realistische projecten met</text>
+  <text x="536" y="157" font-size="11" fill="#5E584C">AI-gebruik zoals in het</text>
+  <text x="536" y="172" font-size="11" fill="#5E584C">beroep: met vermelding van</text>
+  <text x="536" y="187" font-size="11" fill="#5E584C">het gebruik en beoordeling</text>
+  <text x="536" y="202" font-size="11" fill="#5E584C">van het proces</text>
+  <!-- caption -->
+  <text x="10" y="284" font-size="11.5" fill="#5E584C">Drie zones naast elkaar in &#233;&#233;n curriculum, elk met eigen regels en eigen toetsvormen</text>
+  <text x="10" y="300" font-size="11.5" fill="#5E584C">(naar Denny et al., 2024a; Prather et al., 2023).</text>
+</svg>

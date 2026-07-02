@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" font-family="Gentium Book Plus, Georgia, serif">
+  <rect width="760" height="250" fill="#FBF8F0"/>
+  <!-- P -->
+  <rect x="10" y="40" width="136" height="140" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <text x="24" y="78" font-size="30" fill="#38543E" font-weight="700">P</text>
+  <text x="24" y="102" font-size="13.5" fill="#2A2925" font-weight="700">Predict</text>
+  <text x="24" y="124" font-size="10.5" fill="#5E584C">voorspel wat</text>
+  <text x="24" y="138" font-size="10.5" fill="#5E584C">de code doet</text>
+  <line x1="150" y1="110" x2="156" y2="110" stroke="#7E9A7C" stroke-width="2"/>
+  <!-- R -->
+  <rect x="160" y="40" width="136" height="140" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <text x="174" y="78" font-size="30" fill="#38543E" font-weight="700">R</text>
+  <text x="174" y="102" font-size="13.5" fill="#2A2925" font-weight="700">Run</text>
+  <text x="174" y="124" font-size="10.5" fill="#5E584C">voer uit en toets</text>
+  <text x="174" y="138" font-size="10.5" fill="#5E584C">je voorspelling</text>
+  <line x1="300" y1="110" x2="306" y2="110" stroke="#7E9A7C" stroke-width="2"/>
+  <!-- I -->
+  <rect x="310" y="40" width="136" height="140" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <text x="324" y="78" font-size="30" fill="#38543E" font-weight="700">I</text>
+  <text x="324" y="102" font-size="13.5" fill="#2A2925" font-weight="700">Investigate</text>
+  <text x="324" y="124" font-size="10.5" fill="#5E584C">onderzoek de code</text>
+  <text x="324" y="138" font-size="10.5" fill="#5E584C">regel per regel</text>
+  <line x1="450" y1="110" x2="456" y2="110" stroke="#7E9A7C" stroke-width="2"/>
+  <!-- M -->
+  <rect x="460" y="40" width="136" height="140" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <text x="474" y="78" font-size="30" fill="#38543E" font-weight="700">M</text>
+  <text x="474" y="102" font-size="13.5" fill="#2A2925" font-weight="700">Modify</text>
+  <text x="474" y="124" font-size="10.5" fill="#5E584C">pas de code</text>
+  <text x="474" y="138" font-size="10.5" fill="#5E584C">stapsgewijs aan</text>
+  <line x1="600" y1="110" x2="606" y2="110" stroke="#7E9A7C" stroke-width="2"/>
+  <!-- M2 -->
+  <rect x="610" y="40" width="140" height="140" fill="#EDE4CE" stroke="#D8CDB3"/>
+  <text x="624" y="78" font-size="30" fill="#9E3B2D" font-weight="700">M</text>
+  <text x="624" y="102" font-size="13.5" fill="#2A2925" font-weight="700">Make</text>
+  <text x="624" y="124" font-size="10.5" fill="#5E584C">maak iets nieuws</text>
+  <text x="624" y="138" font-size="10.5" fill="#5E584C">met dezelfde</text>
+  <text x="624" y="152" font-size="10.5" fill="#5E584C">patronen</text>
+  <!-- caption -->
+  <text x="10" y="222" font-size="11.5" fill="#5E584C">De les begint bij werkende code die de student niet zelf schreef; pas op het einde schrijft die zelf</text>
+  <text x="10" y="238" font-size="11.5" fill="#5E584C">(Sentance et al., 2019).</text>
+</svg>
