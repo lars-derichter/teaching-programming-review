@@ -1,0 +1,131 @@
+/* ===== ldr — calm, humanist, typography-led ===== */
+:root{
+  --parchment:#F4EDDC; --parchment-deep:#EFE7D2; --panel:#EDE4CE; --warm-white:#FBF8F0;
+  --ink:#2A2925; --ink-soft:#5E584C; --ink-faint:#8A8270;
+  --forest:#38543E; --sage:#7E9A7C; --maple:#9E3B2D; --ochre:#B07D2B;
+  --hairline:#D8CDB3;
+}
+@page{ size:A4; margin:24mm 26mm 22mm 26mm; }
+html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+*{ box-sizing:border-box; }
+body{
+  background:#FFFFFF; color:var(--ink);
+  font-family:"Gentium Book Plus", Georgia, serif;
+  font-size:11.2pt; line-height:1.52; font-weight:400;
+  margin:0; text-rendering:optimizeLegibility;
+  orphans:3; widows:3;
+}
+p, li, blockquote, .article-source{ orphans:3; widows:3; }
+.wrap{ max-width:70ch; }
+
+/* ---- headings ---- */
+h1,h2,h3,h4,h5{ font-family:"Gentium Book Plus", Georgia, serif; font-weight:700;
+  line-height:1.16; letter-spacing:-0.01em; margin:0 0 .35em; }
+h1{ color:var(--maple); font-size:2.15rem; margin-top:0; }
+h2{ color:var(--forest); font-size:1.5rem; margin-top:1.9em; }
+h3{ color:var(--maple); font-size:1.16rem; margin-top:1.5em; font-weight:700; }
+h4{ color:var(--ink); font-size:1.02rem; margin-top:1.2em; }
+/* signature accent rule under theme/reading headings */
+h1.ruled::after, h2.ruled::after{ content:""; display:block; width:40px; height:2px;
+  background:var(--forest); margin:.55em 0 .2em; }
+h1.ruled::after{ background:var(--maple); width:54px; }
+
+/* eyebrow label */
+.eyebrow{ font-family:"Gentium Book Plus", Georgia, serif; text-transform:uppercase;
+  font-weight:700; font-size:.72rem; letter-spacing:.26em; color:var(--forest);
+  margin:0 0 .5em; }
+.eyebrow.sage{ color:var(--sage); }
+
+p{ margin:0 0 .85em; }
+strong{ font-weight:700; color:var(--ink); }
+em{ font-style:italic; }
+a{ color:var(--forest); text-decoration:none; }
+
+/* ---- lists ---- */
+ul{ list-style:none; padding-left:1.3em; margin:0 0 .95em; }
+ul>li{ position:relative; margin:.28em 0; }
+ul>li::before{ content:"—"; position:absolute; left:-1.3em; color:var(--sage); font-weight:700; }
+ol{ padding-left:1.5em; margin:0 0 .95em; }
+ol>li{ margin:.32em 0; padding-left:.2em; }
+ol>li::marker{ color:var(--maple); font-weight:700; }
+
+/* ---- article-source callout ---- */
+.article-source{ background:var(--panel); border-left:3px solid var(--sage);
+  padding:.7em 1em .75em; margin:1.1em 0 1.3em; font-size:.96rem; color:var(--ink-soft);
+  font-style:italic; }
+.article-source strong{ font-style:normal; color:var(--forest);
+  text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; }
+.article-source .follows{ display:block; margin-top:.35em; color:var(--ink-faint);
+  font-style:italic; font-size:.9rem; }
+
+/* ---- code ---- */
+code{ font-family:"IBM Plex Mono", monospace; font-size:.86em; color:var(--forest);
+  background:var(--parchment-deep); padding:.05em .3em; border-radius:2px; }
+pre{ font-family:"IBM Plex Mono", monospace; background:var(--parchment-deep);
+  border-left:3px solid var(--sage); padding:.8em 1em; font-size:.82rem;
+  overflow:auto; line-height:1.4; }
+pre code{ background:none; padding:0; color:var(--ink); }
+
+blockquote{ border-left:3px solid var(--sage); margin:1em 0; padding:.2em 0 .2em 1.1em;
+  color:var(--ink-soft); font-style:italic; }
+
+hr{ border:none; border-top:.5px solid var(--hairline); margin:2em 0; }
+
+/* keep headings with following text: break-after:avoid is unreliable across a
+   full page of prior content, so each heading is wrapped with its following
+   block in a .keep group (see build script) and kept unbreakable here. */
+h1,h2,h3,h4{ break-after:avoid; }
+.keep{ break-inside:avoid; }
+.article-source{ break-inside:avoid; }
+li{ break-inside:avoid; }
+
+/* ================= COVER / TITLE ================= */
+/* full-bleed cover / colophon / TOC: these render on a transparent ground with
+   normal page margins; the parchment is painted *beneath* the content in
+   PyMuPDF so it bleeds to the sheet edges while margins stay per-page correct. */
+body.cover, body.parchment{ background:transparent; }
+.title-page{ min-height:245mm; display:flex;
+  flex-direction:column; justify-content:center; }
+.title-page .kicker{ text-transform:uppercase; font-weight:700; font-size:.8rem;
+  letter-spacing:.3em; color:var(--forest); margin-bottom:1.6em; }
+.title-page h1{ font-size:3.2rem; line-height:1.08; color:var(--maple);
+  margin:0 0 .3em; letter-spacing:-0.015em; }
+.title-page .sub{ font-size:1.35rem; font-style:italic; color:var(--ink-soft);
+  max-width:34ch; margin:.2em 0 2.4em; line-height:1.3; }
+.title-page .rule{ width:54px; height:2px; background:var(--maple); margin:0 0 2.2em; }
+.title-page .meta{ color:var(--ink-faint); font-size:.95rem; line-height:1.7; }
+.title-page .meta .who{ color:var(--ink); font-size:1.05rem; }
+.ornament{ color:var(--forest); font-size:1.4rem; letter-spacing:.4em; margin-top:2em; }
+.ornament .c{ color:var(--maple); }
+
+/* ================= COLOPHON ================= */
+.colophon h2{ margin-top:1.6em; }
+.note-block{ background:var(--warm-white); border-left:3px solid var(--sage);
+  padding:1em 1.2em; margin:1.1em 0; }
+.note-block .lbl{ text-transform:uppercase; font-weight:700; font-size:.72rem;
+  letter-spacing:.2em; color:var(--forest); display:block; margin-bottom:.4em; }
+.license .cc{ font-family:"IBM Plex Mono", monospace; font-weight:700;
+  letter-spacing:.05em; color:var(--maple); font-size:.95rem; }
+
+/* ================= TABLE OF CONTENTS ================= */
+.toc h1{ margin-bottom:.1em; }
+.toc .lead{ color:var(--ink-soft); font-style:italic; margin-bottom:1.8em; }
+.toc ol, .toc ul{ list-style:none; padding:0; margin:0; }
+.toc li{ margin:0; }
+.toc li::before{ content:none; }        /* suppress the generic em-dash marker */
+.toc a{ display:flex; align-items:baseline; text-decoration:none; }
+/* only reading rows carry the sage em-dash */
+.toc .l2 a::before{ content:"—"; color:var(--sage); font-weight:700;
+  flex:0 0 auto; margin-right:.45em; }
+.toc a .t{ color:var(--ink); }
+.toc a .dots{ flex:1; border-bottom:.5px dotted var(--hairline); margin:0 .5em;
+  transform:translateY(-.18em); }
+.toc .grp{ break-inside:avoid; }
+.toc .l1{ margin-top:1.05em; }
+.toc .l1 a .t{ color:var(--forest); font-weight:700; font-size:1.08rem; }
+.toc .l1 .num{ color:var(--ochre); font-weight:700; font-size:1.08rem;
+  min-width:2.1em; }
+.toc .l2{ margin:.12em 0 .12em 2.1em; }
+.toc .l2 a .t{ color:var(--ink-soft); font-size:.98rem; }
+.toc .front a .t{ color:var(--maple); font-weight:700; }
+.toc .front{ margin-top:.2em; }
