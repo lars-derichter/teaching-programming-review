@@ -299,3 +299,12 @@ rests only on the narrative review, the guide says so.
 Start here:
 [leidraad/leidraad-programmeeronderwijs.md](leidraad/leidraad-programmeeronderwijs.md)
 (figures in [leidraad/figuren/](leidraad/figuren/)).
+
+The leidraad is also bundled as a single styled PDF, in the same *ldr* house
+style as the reader, with a page-numbered table of contents, the hand-drawn
+figures inline, and a handful of warm, permissively-licensed (CC0) section
+photographs:
+[leidraad/leidraad-programmeeronderwijs.pdf](leidraad/leidraad-programmeeronderwijs.pdf)
+(26 pages). See
+[leidraad/beelden/BEELDVERANTWOORDING.md](leidraad/beelden/BEELDVERANTWOORDING.md)
+for the image credits.

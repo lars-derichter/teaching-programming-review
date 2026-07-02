@@ -1,4 +1,16 @@
-# tools — building the integrated reader PDF
+# tools — building the bundled PDFs
+
+Two scripts build the two bundled PDFs in the *ldr* house style, sharing
+[style.css](style.css) and the same pipeline (pandoc → headless Chrome →
+PyMuPDF):
+
+- **[build-reader-pdf.py](build-reader-pdf.py)** — the integrated reader (front
+  matter + theme introductions with each source article spliced in full). See
+  below.
+- **[build-leidraad-pdf.py](build-leidraad-pdf.py)** — the leidraad. See
+  [the leidraad section](#building-the-leidraad-pdf).
+
+## The reader PDF
 
 [build-reader-pdf.py](build-reader-pdf.py) assembles the whole reader into a
 single PDF: [../reader/teaching-programming-to-beginners-reader.pdf](../reader/teaching-programming-to-beginners-reader.pdf).
@@ -55,3 +67,48 @@ python3 tools/build-reader-pdf.py
 Intermediates land in `tools/.build/` (gitignored); the final PDF is written to
 `reader/`. Re-run after editing any theme Markdown, swapping an article PDF, or
 changing `style.css`.
+
+## Building the leidraad PDF
+
+[build-leidraad-pdf.py](build-leidraad-pdf.py) turns the single leidraad
+Markdown file into
+[../leidraad/leidraad-programmeeronderwijs.pdf](../leidraad/leidraad-programmeeronderwijs.pdf).
+It reuses [style.css](style.css) plus a small
+[style-leidraad.css](style-leidraad.css) (tables, figure captions, the
+Definitie/Verdieping/Werkvorm callouts, section photos, TOC page numbers).
+
+### What it produces
+
+1. Title page with a warm hero photograph.
+2. Colophon: AI-use note and the CC BY-NC-SA licence (in Flemish; the licence
+   note is moved out of the body and into this front page).
+3. Table of contents with **real, clickable page numbers** and a bookmark
+   outline.
+4. The body as one continuous document: the four hand-drawn SVG figures from
+   `leidraad/figuren/` inline, three warm section-opener photographs from
+   `leidraad/beelden/`, and discreet footers with a folio page number.
+
+### How it differs from the reader build
+
+- **One flowing body**, not per-section PDFs, so the recommendations don't each
+  start on a fresh page.
+- **Page numbers in the TOC.** The reader's TOC has none. Each TOC heading gets
+  an invisible sentinel span; after rendering the body, the script finds each
+  sentinel's page with PyMuPDF, then renders the TOC with the resulting folios
+  (iterating until the TOC's own page count is stable) and stamps matching
+  folios in the footers.
+- **Photographs.** Warm, permissively-licensed (CC0) images sourced via
+  Openverse, given a light sepia duotone so they harmonise with the palette.
+  Credits: [../leidraad/beelden/BEELDVERANTWOORDING.md](../leidraad/beelden/BEELDVERANTWOORDING.md).
+
+### Requirements and run
+
+Same toolchain as the reader (`pandoc`, Chrome, PyMuPDF, the two fonts).
+
+```sh
+python3 tools/build-leidraad-pdf.py
+```
+
+Intermediates land in `tools/.build/parts-leidraad/` (gitignored); the PDF is
+written to `leidraad/`. Re-run after editing the leidraad Markdown, an SVG, a
+photo, or either stylesheet.

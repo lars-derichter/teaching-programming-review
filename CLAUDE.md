@@ -18,14 +18,17 @@ three mutually referencing documents:
    bundled PDF.
 3. **The leidraad**, [leidraad/leidraad-programmeeronderwijs.md](leidraad/leidraad-programmeeronderwijs.md)
    — a Dutch practice guide condensing the review into seven recommendations,
-   with hand-written SVG figures in [leidraad/figuren/](leidraad/figuren/).
+   with hand-written SVG figures in [leidraad/figuren/](leidraad/figuren/) and
+   CC0 section photographs in [leidraad/beelden/](leidraad/beelden/), plus a
+   build tool ([tools/build-leidraad-pdf.py](tools/build-leidraad-pdf.py))
+   that assembles its bundled PDF.
 
 The three are designed to be read together: the leidraad gives the practice,
 the review the justification and evidence strength, the reader the sources. A
 change to one may need reflecting in the others (e.g. a claim or citation
-added to the leidraad should trace back to the review). The reader's build
-tool aside, there is no code, build, lint, or test tooling — work here is
-editing Markdown (and the leidraad's SVGs).
+added to the leidraad should trace back to the review). The two PDF build
+tools aside (see [tools/](tools/)), there is no code, build, lint, or test
+tooling — work here is editing Markdown (and the leidraad's SVGs).
 
 ## Document status and caveats
 
